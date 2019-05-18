@@ -22,8 +22,10 @@
 ## Sensor OTA (Over The Air) update server
 
 ## Sensor case
-- Recommended filament
-- Reminder to scale the model
+- stl, step, and f3d models provided
+- Flame retartent filament recommended
+    - I personally use eSun ePC (Flame retardant level: UL94：V2) for electronics projects
+- Remember to scale the 3D model to compensate for filament shrinkage
 - Screws
 - Nylon washer
 - JST connector
