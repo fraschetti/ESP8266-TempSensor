@@ -14,7 +14,7 @@
 #define MICROS 1000000
 
 //Thread on deep sleep - GPIO16 + RESET diode - https://www.esp8266.com/viewtopic.php?f=160&t=13625&start=12
-//ESP8266 D0  = 16 // 1N5817 Schottky diode (cathode to D0/16, anode to reset pin/pad
+//ESP8266 D0  = 16 // 1N5817 Schottky diode (cathode to D0/16, anode to reset pin/pad)
 //ESP8266 D1  = 5  // Data pin for DHT22 sensor (can be changed in the config below)
 //ESP8266 D2  = 4  // Power pin for the DHT22 sensor (optional - can be changed in the config below)
 //ESP8266 D3  = 0
