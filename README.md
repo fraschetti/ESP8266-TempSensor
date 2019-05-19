@@ -34,9 +34,8 @@
 - Flame retartent filament recommended
     - I personally use eSun ePC (Flame retardant level: UL94：V2) for electronics projects
 - Remember to scale the 3D model to compensate for filament shrinkage
-- Screws
-- Nylon washer
-- JST connector
+- This case relies on the ESP8266 NodeMCU v3 dimensions and a headerless (no pre-soldered pin headers) board. While headerless boards are more difficult to find, their use does allow for a much shorter, uniform, and convenient case height
+- Board dimensions vary wildly between ESP8266 version and manufacturer. I highly reccomend comparing the dimensions of your board and screw hole sizes/locations to the 3D model to avoid wasting unnecessary time and filament
 
 ![Sensor case parts](/sensor-case/ESP8266_Temp_Sensor_Case_Parts.png?raw=true)
 
