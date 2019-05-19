@@ -1,4 +1,6 @@
 # ESP8266 Power efficient temperature sensor
+![Assembled sensor](/sensor-case/ESP8266_Temp_Sensor_Assembled.png?raw=true)
+
 
 ## Sensor design and features
 - Utilizes DHT22 temperature + humidity sensor
@@ -29,5 +31,10 @@
 - Screws
 - Nylon washer
 - JST connector
+
+![Sensor case parts](/sensor-case/ESP8266_Temp_Sensor_Case_Parts.png?raw=true)
+
+![Open sensor case](/sensor-case/ESP8266_Temp_Sensor_Open_Case.png?raw=true)
+
 
 ## How do I get started?
