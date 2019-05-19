@@ -8,6 +8,8 @@
 - OTA (Over The Air) firmware updates
     - No need to physically connect to device to flash new firmware	
 - Utilizes InfluxDB time series DB for data logging
+- Utilizes the board's deep sleep (low power) mode to minimize power consumption 
+    - For maximum efficient/lowest power consumption, the board needs to be powered directly and not via the USB connector (which utilizes the on-board voltage regulator)
 - Per device configuration for temperature and humidity adjustments
     - It's reccomended to calibrate (adjust the software offsets) relative to known accurate sensors
 
