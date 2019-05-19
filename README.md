@@ -1,6 +1,6 @@
 # ESP8266 Power efficient temperature sensor
-![Assembled sensor](/sensor-case/ESP8266_Temp_Sensor_Assembled.png?raw=true)
 
+![Assembled sensor](/sensor-case/ESP8266_Temp_Sensor_Assembled.png?raw=true)
 
 ## Sensor design and features
 - Utilizes DHT22 temperature + humidity sensor
@@ -11,6 +11,7 @@
 - Utilizes the board's deep sleep (low power) mode to minimize power consumption 
     - For maximum efficient/lowest power consumption, the board needs to be powered directly and not via the USB connector (which utilizes the on-board voltage regulator)
 - Per device configuration for temperature and humidity adjustments
+    - Adjustments can be made globally (it's all code) but for my purposes I used the ESP8266  WiFI adapter MAC address
     - It's reccomended to calibrate (adjust the software offsets) relative to known accurate sensors
 
 ## BOM (Bill of Materials)
@@ -40,8 +41,7 @@
 - Board dimensions vary wildly between ESP8266 version and manufacturer. I highly reccomend comparing the dimensions of your board and screw hole sizes/locations to the 3D model to avoid wasting unnecessary time and filament
 
 ![Sensor case parts](/sensor-case/ESP8266_Temp_Sensor_Case_Parts.png?raw=true)
-
 ![Open sensor case](/sensor-case/ESP8266_Temp_Sensor_Open_Case.png?raw=true)
 
 
-## How do I get started?
+## Getting started
