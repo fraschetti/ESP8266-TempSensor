@@ -12,10 +12,16 @@
     - It's reccomended to calibrate (adjust the software offsets) relative to known accurate sensors
 
 ## BOM (Bill of Materials)
+### Sensor
 - 1x ESP8266
     - The provided case leverages NodeMCU v3 w/o attached headers
 - 1x 1N5817 Schottky diode
 - 1x 10kΩ resistor
+
+### Case
+- 4x M2x4 self tapping screws
+- 2x M2x8 self tapping screws
+- 1x M2 nylon washer
 - 1x 3-wire Micro JST connector (optional to simplify disassembly/reassembly)
 
 ## Wiring diagram
