@@ -24,7 +24,7 @@
 ### Case
 - 4x M2x4 self tapping screws
 - 2x M2x8 self tapping screws
-- 1x M2 nylon washer
+- 1x M2 nylon washer (optional)
 - 1x 3-wire Micro JST connector (optional to simplify disassembly/reassembly)
 
 ## Wiring diagram
@@ -39,6 +39,11 @@
 - Remember to scale the 3D model to compensate for filament shrinkage
 - This case relies on the ESP8266 NodeMCU v3 dimensions and a headerless (no pre-soldered pin headers) board. While headerless boards are more difficult to find, their use does allow for a much shorter, uniform, and convenient case height
 - Board dimensions vary wildly between ESP8266 version and manufacturer. I highly reccomend comparing the dimensions of your board and screw hole sizes/locations to the 3D model to avoid wasting unnecessary time and filament
+- Assembly
+    - Use the 4x M2x4 screws to attach the ESP8266 to the case
+    - Use the 2x M2x8 screws to attach the sensor lid to the case
+    - If the sensor does not sit flush, use the nylon washer (any thin washer would do but I used a nylon washer as I had one available) to fill the empty space between the sensor and the lid
+    - As long as the tolerances of your 3D print are within reason, the sliding lid should attach without force but should also not slide out on its own
 
 ![Sensor case parts](/sensor-case/ESP8266_Temp_Sensor_Case_Parts.png?raw=true)
 ![Open sensor case](/sensor-case/ESP8266_Temp_Sensor_Open_Case.png?raw=true)
