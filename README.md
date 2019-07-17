@@ -50,7 +50,7 @@
 
 
 ## Getting started
-1. Install the ES8266 boards into your Arduino IDE
+1. Install the ES8266 boards
     * Instructions [here](https://github.com/esp8266/Arduino#installing-with-boards-manager)
 2. Select the ESP8266 board
     * Tools --> Boards --> *NodeMCU 1.0 (ESP-12E Module)*
