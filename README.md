@@ -17,7 +17,7 @@
 ## BOM (Bill of Materials)
 ### Sensor
 - 1x ESP8266
-    - The provided case leverages NodeMCU v3 w/o attached headers
+    - The provided case leverages NodeMCU v3 w/o attached headers 
 - 1x 1N5817 Schottky diode
 - 1x 10kΩ resistor
 
@@ -50,3 +50,10 @@
 
 
 ## Getting started
+1. Install the ES8266 boards into your Arduino IDE
+    * Instructions [here](https://github.com/esp8266/Arduino#installing-with-boards-manager)
+2. Select the ESP8266 board
+    * Tools --> Boards --> *NodeMCU 1.0 (ESP-12E Module)*
+3. Install the Adafruit DHT sensor library
+    * Instructions [here](https://learn.adafruit.com/dht/using-a-dhtxx-sensor)
+    * Don't forget to install both the *DHT sensor library* **and** the *Adafruit Unified Sensor* libraries
