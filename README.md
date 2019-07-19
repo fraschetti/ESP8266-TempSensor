@@ -50,6 +50,7 @@
 
 
 ## Getting started
+
 1. Install the ES8266 boards
     * Instructions [here](https://github.com/esp8266/Arduino#installing-with-boards-manager)
 2. Select the ESP8266 board
@@ -57,3 +58,17 @@
 3. Install the Adafruit DHT sensor library
     * Instructions [here](https://learn.adafruit.com/dht/using-a-dhtxx-sensor)
     * Don't forget to install both the *DHT sensor library* **and** the *Adafruit Unified Sensor* libraries
+4. Locate the *writeNewDeviceSettings* function and make updates as necessary
+```cpp
+  char* otaUrl = "http://otaserverhostname:otaserverport/ota/tempsensor.bin"; //Blank if not using OTA updates
+  short dhtPin = 5; //ESP8266 D1
+  short dhtPowerPin = 4; //ESP8266 D2 (Not required if you use a power pin directly)
+  char* wifiSSID = "yourwifissid";
+  char* wifiPwd = "yourwifipwd";
+  char* influxDBProtocol = "http";
+  char* influxDBHost = "yourinfluxdbhost";
+  int influxDBPort = 8086;
+  char* influxDBDB = "sensordata";
+  char* influxDBMeasurement = "temperature";
+  short sendInterval = 60; //seconds
+```
