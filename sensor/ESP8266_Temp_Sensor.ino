@@ -228,7 +228,7 @@ void readSettings(bool &success) {
 void writeNewDeviceSettings(bool &success) {
   Serial.println("Attempting to write new device settings...");
 
-  char* otaUrl = "http://otaserverhostname:otaserverport/ota/tempsensor.bin";
+  char* otaUrl = "http://otaserverhostname:otaserverport/ota/tempsensor.bin"; //Blank if not using OTA updates
   short dhtPin = 5; //ESP8266 D1
   short dhtPowerPin = 4; //ESP8266 D2 (Not required if you use a power pin directly)
   char* wifiSSID = "yourwifissid";
