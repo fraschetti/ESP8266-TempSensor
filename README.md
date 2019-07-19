@@ -59,6 +59,8 @@
     * Instructions [here](https://learn.adafruit.com/dht/using-a-dhtxx-sensor)
     * Don't forget to install both the *DHT sensor library* **and** the *Adafruit Unified Sensor* libraries
 4. Locate the *writeNewDeviceSettings* function and make updates as necessary
+
+These settings should be common across all your sensors.
 ```cpp
   char* otaUrl = "http://otaserverhostname:otaserverport/ota/tempsensor.bin"; //Blank if not using OTA updates
   short dhtPin = 5; //ESP8266 D1
@@ -71,4 +73,20 @@
   char* influxDBDB = "sensordata";
   char* influxDBMeasurement = "temperature";
   short sendInterval = 60; //seconds
+```
+
+Each sensor must also have an entry to specify the device's ID and temperature/humidity adjustments.
+To locate each sensor's MAC address, upload the sketch and observe the serial output.
+```WiFi MAC Address: AA:AA:AA:AA:AA:AA```
+
+```cpp
+  if (mac_address == "AA:AA:AA:AA:AA:AA") {
+    sensorTempAdjustment = 0.0;
+    sensorHumdidityAdjustment = 0.0;
+    deviceId = "SensorA";
+  } else if (mac_address == "BB:BB:BB:BB:BB:BB") {
+    sensorTempAdjustment = 0.0;
+    sensorHumdidityAdjustment = 0.0;
+    deviceId = "SensorB";
+  }
 ```
